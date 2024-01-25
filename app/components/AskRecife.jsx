@@ -16,6 +16,7 @@ const AskRecife = () => {
       e.preventDefault();
       const response = await askRecife(jokeMessage);
       setJoke(response);
+      setJokeMessage("");
     } catch (error) {
       setJoke(error);
     } finally {
